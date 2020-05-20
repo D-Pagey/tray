@@ -1,14 +1,12 @@
-import React from "react";
-import "./index.css";
+import React from 'react';
+import './index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Tray.io</h1>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export const App = () => {
+    return (
+        <div className="App">
+            <header className="App-header">
+                <h1>Tray.io</h1>
+            </header>
+        </div>
+    );
+};
