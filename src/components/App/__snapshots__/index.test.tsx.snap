@@ -8,6 +8,19 @@ exports[`App component should render 1`] = `
     <h1>
       Tray.io
     </h1>
+    <div>
+      <h3>
+        Stepper
+      </h3>
+      <p>
+        Step 1
+      </p>
+      <button
+        type="button"
+      >
+        Up
+      </button>
+    </div>
   </header>
 </div>
 `;
