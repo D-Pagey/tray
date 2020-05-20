@@ -2,11 +2,9 @@
 
 exports[`App component should render 1`] = `
 <div
-  class="App"
+  class="sc-AxjAm geglPv"
 >
-  <header
-    class="App-header"
-  >
+  <header>
     <h1>
       Tray.io
     </h1>

@@ -1,12 +1,12 @@
 import React from 'react';
-import './index.css';
+import * as S from './styles';
 
 export const App = () => {
     return (
-        <div className="App">
-            <header className="App-header">
+        <S.Wrapper>
+            <header>
                 <h1>Tray.io</h1>
             </header>
-        </div>
+        </S.Wrapper>
     );
 };
