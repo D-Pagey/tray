@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SuccessMessage component should render 1`] = `
+<div
+  class="sc-AxjAm knSwqB"
+  data-testid="successMessage"
+>
+  <p
+    class="sc-AxirZ gQgsDg"
+  >
+    Please verify your email address, you should have received an email from us already!
+  </p>
+</div>
+`;

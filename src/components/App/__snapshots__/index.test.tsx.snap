@@ -11,22 +11,22 @@ exports[`App component should render 1`] = `
         Stepper
       </h3>
       <div
-        class="sc-AxjAm knSwqB"
+        class="sc-AxiKw fkSgHu"
       >
         <button
-          class="sc-AxirZ cBruuD"
+          class="sc-AxhCb cgIeMn"
           type="button"
         >
           User
         </button>
         <button
-          class="sc-AxirZ fJncWj"
+          class="sc-AxhCb bCgryr"
           type="button"
         >
           Privacy
         </button>
         <button
-          class="sc-AxirZ fJncWj"
+          class="sc-AxhCb bCgryr"
           type="button"
         >
           Done

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SuccessMessage } from '../SuccessMessage';
 import * as S from './styles';
 
 export const Stepper = () => {
@@ -16,7 +17,7 @@ export const Stepper = () => {
 
             {step === 1 && <p>Form</p>}
             {step === 2 && <p data-testid="privacyStep">Privacy</p>}
-            {step === 3 && <p>Done</p>}
+            {step === 3 && <SuccessMessage />}
 
             <button type="button" onClick={() => setStep(2)}>
                 Next
