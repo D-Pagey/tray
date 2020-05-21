@@ -4,12 +4,14 @@ import * as S from './styles';
 
 export const App = () => {
     return (
-        <S.Wrapper>
+        <div>
+            <S.GlobalStyle />
+
             <header>
                 <h1>Tray.io</h1>
 
                 <Stepper />
             </header>
-        </S.Wrapper>
+        </div>
     );
 };

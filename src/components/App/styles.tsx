@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
 
 export const GlobalStyle = createGlobalStyle`
@@ -18,8 +18,4 @@ export const GlobalStyle = createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
   }
-`;
-
-export const Wrapper = styled.div`
-    border: 1px solid black;
 `;

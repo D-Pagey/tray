@@ -5,13 +5,35 @@ exports[`Stepper component should render 1`] = `
   <h3>
     Stepper
   </h3>
+  <div
+    class="sc-AxjAm knSwqB"
+  >
+    <button
+      class="sc-AxirZ cBruuD"
+      type="button"
+    >
+      User
+    </button>
+    <button
+      class="sc-AxirZ fJncWj"
+      type="button"
+    >
+      Privacy
+    </button>
+    <button
+      class="sc-AxirZ fJncWj"
+      type="button"
+    >
+      Done
+    </button>
+  </div>
   <p>
-    Step 1
+    Form
   </p>
   <button
     type="button"
   >
-    Up
+    Next
   </button>
 </div>
 `;

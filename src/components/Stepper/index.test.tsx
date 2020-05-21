@@ -9,23 +9,11 @@ describe('Stepper component', () => {
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    it('should increment the step', () => {
-        const { getByText } = render(<Stepper />);
+    it('should progress the step', () => {
+        const { getByText, getByTestId } = render(<Stepper />);
 
-        userEvent.click(getByText('Up'));
+        userEvent.click(getByText('Next'));
 
-        getByText('Step 2');
-    });
-
-    it('should decrement the step', () => {
-        const { getByText } = render(<Stepper />);
-
-        userEvent.click(getByText('Up'));
-
-        getByText('Step 2');
-
-        userEvent.click(getByText('Down'));
-
-        getByText('Step 1');
+        getByTestId('privacyStep');
     });
 });
