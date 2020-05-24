@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUpForm component should render 1`] = `
+<div
+  class="sc-AxjAm eYcNGP"
+>
+  <form
+    action="#"
+  >
+    <input
+      name="name"
+      type="text"
+      value=""
+    />
+    <input
+      name="role"
+      type="text"
+      value=""
+    />
+    <input
+      name="email"
+      type="email"
+      value=""
+    />
+    <input
+      name="password"
+      type="password"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;

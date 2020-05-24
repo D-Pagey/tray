@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
+import { SignUpForm } from '../SignUpForm';
 import { SuccessMessage } from '../SuccessMessage';
 import * as S from './styles';
+
+/**
+ * Store finalised form in parent state
+ * Store finalised privary in parent state
+ * Parent collates and console logs
+ * Therefore can create form component
+ */
 
 export const Stepper = () => {
     const [step, setStep] = useState(1);
@@ -15,7 +23,7 @@ export const Stepper = () => {
                 <S.NavButton isActive={step === 3}>Done</S.NavButton>
             </S.ButtonWrapper>
 
-            {step === 1 && <p>Form</p>}
+            {step === 1 && <SignUpForm />}
             {step === 2 && <p data-testid="privacyStep">Privacy</p>}
             {step === 3 && <SuccessMessage />}
 

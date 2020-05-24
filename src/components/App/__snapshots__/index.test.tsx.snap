@@ -11,30 +11,60 @@ exports[`App component should render 1`] = `
         Stepper
       </h3>
       <div
-        class="sc-AxiKw fkSgHu"
+        class="sc-AxhCb gzDXAC"
       >
         <button
-          class="sc-AxhCb cgIeMn"
+          class="sc-AxhUy frAXYW"
           type="button"
         >
           User
         </button>
         <button
-          class="sc-AxhCb bCgryr"
+          class="sc-AxhUy JpgiS"
           type="button"
         >
           Privacy
         </button>
         <button
-          class="sc-AxhCb bCgryr"
+          class="sc-AxhUy JpgiS"
           type="button"
         >
           Done
         </button>
       </div>
-      <p>
-        Form
-      </p>
+      <div
+        class="sc-AxjAm eYcNGP"
+      >
+        <form
+          action="#"
+        >
+          <input
+            name="name"
+            type="text"
+            value=""
+          />
+          <input
+            name="role"
+            type="text"
+            value=""
+          />
+          <input
+            name="email"
+            type="email"
+            value=""
+          />
+          <input
+            name="password"
+            type="password"
+            value=""
+          />
+          <button
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
       <button
         type="button"
       >
