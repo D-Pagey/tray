@@ -6,54 +6,80 @@ exports[`Stepper component should render 1`] = `
     Stepper
   </h3>
   <div
-    class="sc-AxhCb gzDXAC"
+    class="sc-Axmtr hIHYcU"
   >
     <button
-      class="sc-AxhUy frAXYW"
+      class="sc-AxmLO fROoHo"
       type="button"
     >
       User
     </button>
     <button
-      class="sc-AxhUy JpgiS"
+      class="sc-AxmLO czrXYU"
       type="button"
     >
       Privacy
     </button>
     <button
-      class="sc-AxhUy JpgiS"
+      class="sc-AxmLO czrXYU"
       type="button"
     >
       Done
     </button>
   </div>
   <div
-    class="sc-AxjAm eYcNGP"
+    class="sc-AxjAm kaYqpa"
   >
     <form
       action="#"
+      class="sc-AxirZ eTxVFc"
     >
-      <input
-        name="name"
-        type="text"
-        value=""
-      />
-      <input
-        name="role"
-        type="text"
-        value=""
-      />
-      <input
-        name="email"
-        type="email"
-        value=""
-      />
-      <input
-        name="password"
-        type="password"
-        value=""
-      />
+      <label
+        class="sc-AxhCb dlfVju"
+      >
+        Name:
+        <input
+          class="sc-AxiKw bEmcek"
+          name="name"
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        class="sc-AxhCb dlfVju"
+      >
+        Role:
+        <input
+          class="sc-AxiKw bEmcek"
+          name="role"
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        class="sc-AxhCb dlfVju"
+      >
+        Email:
+        <input
+          class="sc-AxiKw bEmcek"
+          name="email"
+          type="email"
+          value=""
+        />
+      </label>
+      <label
+        class="sc-AxhCb dlfVju"
+      >
+        Password:
+        <input
+          class="sc-AxiKw bEmcek"
+          name="password"
+          type="password"
+          value=""
+        />
+      </label>
       <button
+        class="sc-AxhUy qvFKl"
         type="submit"
       >
         Submit

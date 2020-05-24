@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, ErrorMessage } from 'formik';
 import * as S from './styles';
 
 type ErrorTypes = {
@@ -33,23 +33,35 @@ export const SignUpForm = () => {
                 }}
             >
                 {({ isSubmitting }) => (
-                    <Form>
-                        <Field type="text" name="name" />
+                    <S.StyledForm>
+                        <S.Label>
+                            Name:
+                            <S.StyledField type="text" name="name" />
+                        </S.Label>
                         <ErrorMessage name="name" component="div" />
 
-                        <Field type="text" name="role" />
+                        <S.Label>
+                            Role:
+                            <S.StyledField type="text" name="role" />
+                        </S.Label>
                         <ErrorMessage name="role" component="div" />
 
-                        <Field type="email" name="email" />
+                        <S.Label>
+                            Email:
+                            <S.StyledField type="email" name="email" />
+                        </S.Label>
                         <ErrorMessage name="email" component="div" />
 
-                        <Field type="password" name="password" />
+                        <S.Label>
+                            Password:
+                            <S.StyledField type="password" name="password" />
+                        </S.Label>
                         <ErrorMessage name="password" component="div" />
 
-                        <button type="submit" disabled={isSubmitting}>
+                        <S.SubmitButton type="submit" disabled={isSubmitting}>
                             Submit
-                        </button>
-                    </Form>
+                        </S.SubmitButton>
+                    </S.StyledForm>
                 )}
             </Formik>
         </S.Wrapper>
