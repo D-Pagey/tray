@@ -9,9 +9,9 @@ export const App = () => {
 
             <header>
                 <h1>Tray.io</h1>
-
-                <Stepper />
             </header>
+
+            <Stepper />
         </div>
     );
 };

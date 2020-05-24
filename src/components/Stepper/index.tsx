@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { UserDataTypes } from '../../types';
 import { SignUpForm } from '../SignUpForm';
+import { PrivacyChecks } from '../PrivacyChecks';
 import { SuccessMessage } from '../SuccessMessage';
 import * as S from './styles';
 
@@ -13,12 +14,22 @@ import * as S from './styles';
 
 export const Stepper = () => {
     const [signUpData, setSignUpData] = useState<UserDataTypes>();
+    const [privacyData, setPrivacyData] = useState<UserDataTypes>();
     const [step, setStep] = useState(1);
 
     const handleSignUpSubmit = (userData: UserDataTypes) => {
         setSignUpData(userData);
         setStep(2);
     };
+
+    const handlePrivacySubmit = (privacyChecks: any) => {
+        setPrivacyData(privacyChecks);
+        setStep(3);
+    };
+
+    const handleBack = () => setStep(1);
+
+    console.log({ signUpData, privacyData });
 
     return (
         <div>
@@ -31,7 +42,7 @@ export const Stepper = () => {
             </S.ButtonWrapper>
 
             {step === 1 && <SignUpForm onSubmit={handleSignUpSubmit} />}
-            {step === 2 && <p data-testid="privacyStep">Privacy</p>}
+            {step === 2 && <PrivacyChecks onBack={handleBack} onSubmit={handlePrivacySubmit} />}
             {step === 3 && <SuccessMessage />}
         </div>
     );

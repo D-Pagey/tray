@@ -6,105 +6,105 @@ exports[`App component should render 1`] = `
     <h1>
       Tray.io
     </h1>
-    <div>
-      <h3>
-        Stepper
-      </h3>
-      <div
-        class="sc-Axmtr hIHYcU"
-      >
-        <button
-          class="sc-AxmLO fROoHo"
-          type="button"
-        >
-          User
-        </button>
-        <button
-          class="sc-AxmLO czrXYU"
-          type="button"
-        >
-          Privacy
-        </button>
-        <button
-          class="sc-AxmLO czrXYU"
-          type="button"
-        >
-          Done
-        </button>
-      </div>
-      <div
-        class="sc-AxjAm kaYqpa"
-      >
-        <form
-          action="#"
-          class="sc-AxirZ eTxVFc"
-        >
-          <label
-            class="sc-AxhCb dlfVju"
-            for="name"
-          >
-            Name:
-            <input
-              class="sc-AxiKw bEmcek"
-              data-testid="signUpNameInput"
-              id="name"
-              name="name"
-              type="text"
-              value=""
-            />
-          </label>
-          <label
-            class="sc-AxhCb dlfVju"
-            for="role"
-          >
-            Role:
-            <input
-              class="sc-AxiKw bEmcek"
-              data-testid="signUpRoleInput"
-              id="role"
-              name="role"
-              type="text"
-              value=""
-            />
-          </label>
-          <label
-            class="sc-AxhCb dlfVju"
-            for="email"
-          >
-            Email:
-            <input
-              class="sc-AxiKw bEmcek"
-              data-testid="signUpEmailInput"
-              id="email"
-              name="email"
-              type="email"
-              value=""
-            />
-          </label>
-          <label
-            class="sc-AxhCb dlfVju"
-            for="password"
-          >
-            Password:
-            <input
-              class="sc-AxiKw bEmcek"
-              data-testid="signUpPasswordInput"
-              id="password"
-              name="password"
-              type="password"
-              value=""
-            />
-          </label>
-          <button
-            class="sc-AxhUy qvFKl"
-            data-testid="signUpSubmitButton"
-            type="submit"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
-    </div>
   </header>
+  <div>
+    <h3>
+      Stepper
+    </h3>
+    <div
+      class="sc-AxmLO iBGnth"
+    >
+      <button
+        class="sc-fzozJi kjiNBt"
+        type="button"
+      >
+        User
+      </button>
+      <button
+        class="sc-fzozJi jjIptV"
+        type="button"
+      >
+        Privacy
+      </button>
+      <button
+        class="sc-fzozJi jjIptV"
+        type="button"
+      >
+        Done
+      </button>
+    </div>
+    <div
+      class="sc-AxjAm kaYqpa"
+    >
+      <form
+        action="#"
+        class="sc-AxirZ eTxVFc"
+      >
+        <label
+          class="sc-AxhCb dlfVju"
+          for="name"
+        >
+          Name:
+          <input
+            class="sc-AxiKw bEmcek"
+            data-testid="signUpNameInput"
+            id="name"
+            name="name"
+            type="text"
+            value=""
+          />
+        </label>
+        <label
+          class="sc-AxhCb dlfVju"
+          for="role"
+        >
+          Role:
+          <input
+            class="sc-AxiKw bEmcek"
+            data-testid="signUpRoleInput"
+            id="role"
+            name="role"
+            type="text"
+            value=""
+          />
+        </label>
+        <label
+          class="sc-AxhCb dlfVju"
+          for="email"
+        >
+          Email:
+          <input
+            class="sc-AxiKw bEmcek"
+            data-testid="signUpEmailInput"
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+        </label>
+        <label
+          class="sc-AxhCb dlfVju"
+          for="password"
+        >
+          Password:
+          <input
+            class="sc-AxiKw bEmcek"
+            data-testid="signUpPasswordInput"
+            id="password"
+            name="password"
+            type="password"
+            value=""
+          />
+        </label>
+        <button
+          class="sc-AxhUy qvFKl"
+          data-testid="signUpSubmitButton"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
 </div>
 `;
