@@ -17,13 +17,19 @@ export const PrivacyChecks: FC<PrivacyChecksTypes> = ({ onBack, onSubmit }) => {
 
     return (
         <S.Form>
-            <input type="checkbox" checked={isUpdatesChecked} onChange={() => setIsUpdatesChecked(!isUpdatesChecked)} />
+            <input
+                type="checkbox"
+                checked={isUpdatesChecked}
+                onChange={() => setIsUpdatesChecked(!isUpdatesChecked)}
+                data-testid="updatesCheckbox"
+            />
             <p>Receive updates about Tray.io product by email</p>
 
             <input
                 type="checkbox"
                 checked={isCommunicationChecked}
                 onChange={() => setIsCommunicationChecked(!isCommunicationChecked)}
+                data-testid="communicationCheckbox"
             />
             <p>Receive communication by email for other products created by the Tray.io team</p>
 
@@ -31,7 +37,7 @@ export const PrivacyChecks: FC<PrivacyChecksTypes> = ({ onBack, onSubmit }) => {
                 Back
             </button>
 
-            <button type="submit" onClick={handleSubmit}>
+            <button type="submit" onClick={handleSubmit} data-testid="privacySubmit">
                 Next
             </button>
         </S.Form>

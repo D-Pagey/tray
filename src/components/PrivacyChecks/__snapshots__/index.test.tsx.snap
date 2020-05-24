@@ -5,12 +5,14 @@ exports[`PrivacyChecks component should render 1`] = `
   class="sc-AxjAm kbMpdb"
 >
   <input
+    data-testid="updatesCheckbox"
     type="checkbox"
   />
   <p>
     Receive updates about Tray.io product by email
   </p>
   <input
+    data-testid="communicationCheckbox"
     type="checkbox"
   />
   <p>
@@ -22,6 +24,7 @@ exports[`PrivacyChecks component should render 1`] = `
     Back
   </button>
   <button
+    data-testid="privacySubmit"
     type="submit"
   >
     Next

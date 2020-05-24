@@ -20,15 +20,15 @@ describe('SignUpForm component', () => {
         const password = 'hello1234';
         const onSubmit = jest.fn();
 
-        const { findByTestId, getByTestId } = render(<SignUpForm {...props} onSubmit={onSubmit} />);
+        const { getByTestId } = render(<SignUpForm {...props} onSubmit={onSubmit} />);
 
-        userEvent.type(await findByTestId('signUpNameInput'), name);
+        userEvent.type(getByTestId('signUpNameInput'), name);
 
-        userEvent.type(await findByTestId('signUpRoleInput'), role);
+        userEvent.type(getByTestId('signUpRoleInput'), role);
 
-        userEvent.type(await findByTestId('signUpEmailInput'), email);
+        userEvent.type(getByTestId('signUpEmailInput'), email);
 
-        userEvent.type(await findByTestId('signUpPasswordInput'), password);
+        userEvent.type(getByTestId('signUpPasswordInput'), password);
 
         userEvent.click(getByTestId('signUpSubmitButton'));
 

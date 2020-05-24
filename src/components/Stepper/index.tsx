@@ -29,8 +29,6 @@ export const Stepper = () => {
 
     const handleBack = () => setStep(1);
 
-    console.log({ signUpData, privacyData });
-
     return (
         <div>
             <h3>Stepper</h3>

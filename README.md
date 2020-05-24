@@ -1,3 +1,6 @@
+-   mention that Redux is overkill for this app
+-   choice to use Formik
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
