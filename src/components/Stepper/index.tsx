@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { UserDataTypes } from '../../types';
 import { SignUpForm } from '../SignUpForm';
 import { SuccessMessage } from '../SuccessMessage';
 import * as S from './styles';
@@ -11,7 +12,13 @@ import * as S from './styles';
  */
 
 export const Stepper = () => {
+    const [signUpData, setSignUpData] = useState<UserDataTypes>();
     const [step, setStep] = useState(1);
+
+    const handleSignUpSubmit = (userData: UserDataTypes) => {
+        setSignUpData(userData);
+        setStep(2);
+    };
 
     return (
         <div>
@@ -23,13 +30,9 @@ export const Stepper = () => {
                 <S.NavButton isActive={step === 3}>Done</S.NavButton>
             </S.ButtonWrapper>
 
-            {step === 1 && <SignUpForm />}
+            {step === 1 && <SignUpForm onSubmit={handleSignUpSubmit} />}
             {step === 2 && <p data-testid="privacyStep">Privacy</p>}
             {step === 3 && <SuccessMessage />}
-
-            <button type="button" onClick={() => setStep(2)}>
-                Next
-            </button>
         </div>
     );
 };

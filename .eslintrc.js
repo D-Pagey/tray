@@ -11,6 +11,7 @@ module.exports = {
         'jest/no-identical-title': 'error',
         'jest/prefer-to-have-length': 'warn',
         'jest/valid-expect': 'error',
-        'jest/expect-expect': 'off'
+        'jest/expect-expect': 'off',
+        'react/jsx-props-no-spreading': 'off'
     }
 };

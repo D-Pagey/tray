@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Formik, ErrorMessage } from 'formik';
+import { UserDataTypes } from '../../types';
 import * as S from './styles';
+
+export type SignUpFormTypes = {
+    onSubmit: (userData: UserDataTypes) => void;
+};
 
 type ErrorTypes = {
     email?: string;
@@ -10,7 +15,7 @@ type ErrorTypes = {
 
 const initialValues = { email: '', name: '', password: '', role: '' };
 
-export const SignUpForm = () => {
+export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
     return (
         <S.Wrapper>
             <Formik
@@ -23,9 +28,12 @@ export const SignUpForm = () => {
                     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
                         errors.email = 'Invalid email address';
                     }
+
                     return errors;
                 }}
                 onSubmit={(values, { setSubmitting }) => {
+                    onSubmit(values);
+
                     setTimeout(() => {
                         alert(JSON.stringify(values, null, 2));
                         setSubmitting(false);
@@ -34,31 +42,36 @@ export const SignUpForm = () => {
             >
                 {({ isSubmitting }) => (
                     <S.StyledForm>
-                        <S.Label>
+                        <S.Label htmlFor="name">
                             Name:
-                            <S.StyledField type="text" name="name" />
+                            <S.StyledField id="name" type="text" name="name" data-testid="signUpNameInput" />
                         </S.Label>
                         <ErrorMessage name="name" component="div" />
 
-                        <S.Label>
+                        <S.Label htmlFor="role">
                             Role:
-                            <S.StyledField type="text" name="role" />
+                            <S.StyledField id="role" type="text" name="role" data-testid="signUpRoleInput" />
                         </S.Label>
                         <ErrorMessage name="role" component="div" />
 
-                        <S.Label>
+                        <S.Label htmlFor="email">
                             Email:
-                            <S.StyledField type="email" name="email" />
+                            <S.StyledField id="email" type="email" name="email" data-testid="signUpEmailInput" />
                         </S.Label>
                         <ErrorMessage name="email" component="div" />
 
-                        <S.Label>
+                        <S.Label htmlFor="password">
                             Password:
-                            <S.StyledField type="password" name="password" />
+                            <S.StyledField
+                                id="password"
+                                type="password"
+                                name="password"
+                                data-testid="signUpPasswordInput"
+                            />
                         </S.Label>
                         <ErrorMessage name="password" component="div" />
 
-                        <S.SubmitButton type="submit" disabled={isSubmitting}>
+                        <S.SubmitButton type="submit" disabled={isSubmitting} data-testid="signUpSubmitButton">
                             Submit
                         </S.SubmitButton>
                     </S.StyledForm>
