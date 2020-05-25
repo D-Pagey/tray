@@ -3,40 +3,40 @@
 exports[`Stepper component should render 1`] = `
 <div>
   <h2
-    class="sc-fznyAO jmoTiq"
+    class="sc-fznZeY bRAloj"
   >
     Sign Up Form
   </h2>
   <div
-    class="sc-fznKkj jrYdpG"
+    class="sc-fzokOt kfkDjJ"
   >
     <button
-      class="sc-fznZeY hwLqnx"
+      class="sc-fzqBZW hTgkWT"
       type="button"
     >
       User
     </button>
     <button
-      class="sc-fznZeY huwlMx"
+      class="sc-fzqBZW bJTCrv"
       type="button"
     >
       Privacy
     </button>
     <button
-      class="sc-fznZeY huwlMx"
+      class="sc-fzqBZW bJTCrv"
       type="button"
     >
       Done
     </button>
   </div>
   <div
-    class="sc-AxirZ jfPcbx"
+    class="sc-AxhCb iLrMEl"
   >
     <p
-      class="sc-AxiKw kRFcPg"
+      class="sc-AxhUy hQDqcJ"
     >
       <span
-        class="sc-AxhCb iMLeny"
+        class="sc-AxgMl lYEcR"
       >
         *
       </span>
@@ -44,21 +44,21 @@ exports[`Stepper component should render 1`] = `
     </p>
     <form
       action="#"
-      class="sc-AxhUy kRznDN"
+      class="sc-AxheI fFzjlp"
     >
       <label
-        class="sc-AxheI cMlacN"
+        class="sc-AxmLO dkqJhP"
         for="name"
       >
         Name: 
         <span
-          class="sc-AxhCb iMLeny"
+          class="sc-AxgMl lYEcR"
         >
           *
         </span>
       </label>
       <input
-        class="sc-AxgMl fHmrWc"
+        class="sc-Axmtr lkhMLB"
         data-testid="signUpNameInput"
         id="name"
         name="name"
@@ -67,13 +67,13 @@ exports[`Stepper component should render 1`] = `
         value=""
       />
       <label
-        class="sc-AxheI cMlacN"
+        class="sc-AxmLO dkqJhP"
         for="role"
       >
         Role:
       </label>
       <input
-        class="sc-AxgMl fHmrWc"
+        class="sc-Axmtr lkhMLB"
         data-testid="signUpRoleInput"
         id="role"
         name="role"
@@ -82,18 +82,18 @@ exports[`Stepper component should render 1`] = `
         value=""
       />
       <label
-        class="sc-AxheI cMlacN"
+        class="sc-AxmLO dkqJhP"
         for="email"
       >
         Email: 
         <span
-          class="sc-AxhCb iMLeny"
+          class="sc-AxgMl lYEcR"
         >
           *
         </span>
       </label>
       <input
-        class="sc-AxgMl fHmrWc"
+        class="sc-Axmtr lkhMLB"
         data-testid="signUpEmailInput"
         id="email"
         name="email"
@@ -102,18 +102,18 @@ exports[`Stepper component should render 1`] = `
         value=""
       />
       <label
-        class="sc-AxheI cMlacN"
+        class="sc-AxmLO dkqJhP"
         for="password"
       >
         Password: 
         <span
-          class="sc-AxhCb iMLeny"
+          class="sc-AxgMl lYEcR"
         >
           *
         </span>
       </label>
       <input
-        class="sc-AxgMl fHmrWc"
+        class="sc-Axmtr lkhMLB"
         data-testid="signUpPasswordInput"
         id="password"
         name="password"
@@ -122,7 +122,7 @@ exports[`Stepper component should render 1`] = `
         value=""
       />
       <button
-        class="sc-AxjAm bRcXEK"
+        class="sc-AxirZ esfovg"
         data-testid="signUpSubmitButton"
         type="submit"
       >

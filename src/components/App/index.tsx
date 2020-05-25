@@ -4,7 +4,7 @@ import * as S from './styles';
 
 export const App = () => {
     return (
-        <div>
+        <S.Wrapper>
             <S.GlobalStyle />
 
             <header>
@@ -12,6 +12,6 @@ export const App = () => {
             </header>
 
             <Stepper />
-        </div>
+        </S.Wrapper>
     );
 };

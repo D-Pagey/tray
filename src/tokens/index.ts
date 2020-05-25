@@ -4,3 +4,11 @@ export const mediaQuery = {
     laptop: '(min-width: 1024px)',
     monitor: '(min-width: 1500px)'
 };
+
+export const colour = {
+    darkgreen: 'darkgreen',
+    green: 'green',
+    offWhite: '#f8f8ff',
+    silver: 'silver',
+    white: 'white'
+};

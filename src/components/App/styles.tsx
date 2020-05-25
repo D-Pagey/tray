@@ -1,12 +1,13 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
-import { mediaQuery } from '../../tokens';
+import { colour, mediaQuery } from '../../tokens';
 
 export const GlobalStyle = createGlobalStyle`
 
   ${normalize()}
 
   body {
+    background-color: ${colour.offWhite};
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -20,6 +21,11 @@ export const GlobalStyle = createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
   }
+`;
+
+export const Wrapper = styled.div`
+    max-width: 600px;
+    margin: 0 auto;
 `;
 
 export const Title = styled.h1`

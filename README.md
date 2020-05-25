@@ -1,5 +1,7 @@
 -   mention that Redux is overkill for this app
 -   choice to use Formik
+-   removed back functionality as per brief (link commit)
+-   styled duplications
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
