@@ -2,38 +2,38 @@
 
 exports[`App component should render 1`] = `
 <div
-  class="sc-fzqNJr eTXyob"
+  class="sc-fzoyAV ilrSjR"
 >
   <header>
     <h1
-      class="sc-fzoyAV hZjXHn"
+      class="sc-fzoLag bprjPr"
     >
       Tray.io
     </h1>
   </header>
   <div>
     <h2
-      class="sc-fznZeY bRAloj"
+      class="sc-fzokOt eemgQE"
     >
       Sign Up Form
     </h2>
     <div
-      class="sc-fzokOt kfkDjJ"
+      class="sc-fzqBZW cZzLuM"
     >
       <button
-        class="sc-fzqBZW hTgkWT"
+        class="sc-fzqNJr kKQZEm"
         type="button"
       >
         User
       </button>
       <button
-        class="sc-fzqBZW bJTCrv"
+        class="sc-fzqNJr jCBTEO"
         type="button"
       >
         Privacy
       </button>
       <button
-        class="sc-fzqBZW bJTCrv"
+        class="sc-fzqNJr jCBTEO"
         type="button"
       >
         Done

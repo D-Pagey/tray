@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Formik, ErrorMessage } from 'formik';
+import { Formik } from 'formik';
 import { UserDataTypes } from '../../types';
 import { Button } from '../Button';
 import * as S from './styles';
@@ -38,11 +38,7 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
                 }}
                 onSubmit={(values, { setSubmitting }) => {
                     onSubmit(values);
-
-                    setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
-                        setSubmitting(false);
-                    }, 400);
+                    setSubmitting(false);
                 }}
             >
                 {({ isSubmitting }) => (
@@ -57,7 +53,7 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
                             data-testid="signUpNameInput"
                             placeholder="Joe Bloggs"
                         />
-                        <ErrorMessage name="name" component="div" />
+                        <S.Error name="name" component="div" />
 
                         <S.Label htmlFor="role">Role:</S.Label>
                         <S.StyledField
@@ -67,7 +63,7 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
                             data-testid="signUpRoleInput"
                             placeholder="Software Engineer"
                         />
-                        <ErrorMessage name="role" component="div" />
+                        <S.Error name="role" component="div" />
 
                         <S.Label htmlFor="email">
                             Email: <S.RedSpan>*</S.RedSpan>
@@ -79,7 +75,7 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
                             data-testid="signUpEmailInput"
                             placeholder="hello@email.com"
                         />
-                        <ErrorMessage name="email" component="div" />
+                        <S.Error name="email" component="div" />
 
                         <S.Label htmlFor="password">
                             Password: <S.RedSpan>*</S.RedSpan>
@@ -91,7 +87,7 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
                             data-testid="signUpPasswordInput"
                             placeholder="Secret password..."
                         />
-                        <ErrorMessage name="password" component="div" />
+                        <S.Error name="password" component="div" />
 
                         <Button disabled={isSubmitting} data-testid="signUpSubmitButton">
                             Submit

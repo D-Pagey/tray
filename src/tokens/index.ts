@@ -9,6 +9,7 @@ export const colour = {
     darkgreen: 'darkgreen',
     green: 'green',
     offWhite: '#f8f8ff',
+    red: 'red',
     silver: 'silver',
     white: 'white'
 };

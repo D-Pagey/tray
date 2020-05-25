@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Field, Form } from 'formik';
+import { ErrorMessage, Field, Form } from 'formik';
+import { colour } from '../../tokens';
 
 export const Wrapper = styled.div`
     padding: 1rem;
@@ -36,9 +37,14 @@ export const Label = styled.label`
 `;
 
 export const SubmitButton = styled.button`
+    align-self: flex-end;
     background-color: green;
     margin: 1rem 0 0;
     padding: 1rem;
     width: 200px;
-    align-self: flex-end;
+`;
+
+export const Error = styled(ErrorMessage)`
+    color: ${colour.red};
+    padding: 0 0 1rem;
 `;

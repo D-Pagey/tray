@@ -3,27 +3,27 @@
 exports[`Stepper component should render 1`] = `
 <div>
   <h2
-    class="sc-fznZeY bRAloj"
+    class="sc-fzokOt eemgQE"
   >
     Sign Up Form
   </h2>
   <div
-    class="sc-fzokOt kfkDjJ"
+    class="sc-fzqBZW cZzLuM"
   >
     <button
-      class="sc-fzqBZW hTgkWT"
+      class="sc-fzqNJr kKQZEm"
       type="button"
     >
       User
     </button>
     <button
-      class="sc-fzqBZW bJTCrv"
+      class="sc-fzqNJr jCBTEO"
       type="button"
     >
       Privacy
     </button>
     <button
-      class="sc-fzqBZW bJTCrv"
+      class="sc-fzqNJr jCBTEO"
       type="button"
     >
       Done

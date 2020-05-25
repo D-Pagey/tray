@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b3d17311-c014-4cb0-b578-0627aee4cf42/deploy-status)](https://app.netlify.com/sites/pagey-tray/deploys)
+
 -   mention that Redux is overkill for this app
 -   choice to use Formik
 -   removed back functionality as per brief (link commit)
