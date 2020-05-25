@@ -31,7 +31,7 @@ export const Stepper = () => {
 
     return (
         <div>
-            <h3>Stepper</h3>
+            <S.Title>Sign Up Form</S.Title>
 
             <S.ButtonWrapper>
                 <S.NavButton isActive={step === 1}>User</S.NavButton>

@@ -1,5 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
+import { mediaQuery } from '../../tokens';
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -19,4 +20,13 @@ export const GlobalStyle = createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
   }
+`;
+
+export const Title = styled.h1`
+    margin: 1rem 0 0;
+    text-align: center;
+
+    @media ${mediaQuery.tablet} {
+        text-align: left;
+    }
 `;

@@ -19,6 +19,10 @@ const initialValues = { email: '', name: '', password: '', role: '' };
 export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
     return (
         <S.Wrapper>
+            <S.Text>
+                <S.RedSpan>*</S.RedSpan> indicates a required field
+            </S.Text>
+
             <Formik
                 initialValues={initialValues}
                 validate={(values) => {
@@ -44,32 +48,49 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
                 {({ isSubmitting }) => (
                     <S.StyledForm>
                         <S.Label htmlFor="name">
-                            Name:
-                            <S.StyledField id="name" type="text" name="name" data-testid="signUpNameInput" />
+                            Name: <S.RedSpan>*</S.RedSpan>
                         </S.Label>
+                        <S.StyledField
+                            id="name"
+                            type="text"
+                            name="name"
+                            data-testid="signUpNameInput"
+                            placeholder="Joe Bloggs"
+                        />
                         <ErrorMessage name="name" component="div" />
 
-                        <S.Label htmlFor="role">
-                            Role:
-                            <S.StyledField id="role" type="text" name="role" data-testid="signUpRoleInput" />
-                        </S.Label>
+                        <S.Label htmlFor="role">Role:</S.Label>
+                        <S.StyledField
+                            id="role"
+                            type="text"
+                            name="role"
+                            data-testid="signUpRoleInput"
+                            placeholder="Software Engineer"
+                        />
                         <ErrorMessage name="role" component="div" />
 
                         <S.Label htmlFor="email">
-                            Email:
-                            <S.StyledField id="email" type="email" name="email" data-testid="signUpEmailInput" />
+                            Email: <S.RedSpan>*</S.RedSpan>
                         </S.Label>
+                        <S.StyledField
+                            id="email"
+                            type="email"
+                            name="email"
+                            data-testid="signUpEmailInput"
+                            placeholder="hello@email.com"
+                        />
                         <ErrorMessage name="email" component="div" />
 
                         <S.Label htmlFor="password">
-                            Password:
-                            <S.StyledField
-                                id="password"
-                                type="password"
-                                name="password"
-                                data-testid="signUpPasswordInput"
-                            />
+                            Password: <S.RedSpan>*</S.RedSpan>
                         </S.Label>
+                        <S.StyledField
+                            id="password"
+                            type="password"
+                            name="password"
+                            data-testid="signUpPasswordInput"
+                            placeholder="Secret password..."
+                        />
                         <ErrorMessage name="password" component="div" />
 
                         <Button disabled={isSubmitting} data-testid="signUpSubmitButton">

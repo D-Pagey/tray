@@ -8,7 +8,7 @@ export const App = () => {
             <S.GlobalStyle />
 
             <header>
-                <h1>Tray.io</h1>
+                <S.Title>Tray.io</S.Title>
             </header>
 
             <Stepper />

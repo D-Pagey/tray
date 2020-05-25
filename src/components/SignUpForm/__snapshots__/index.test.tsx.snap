@@ -4,66 +4,95 @@ exports[`SignUpForm component should render 1`] = `
 <div
   class="sc-AxirZ jfPcbx"
 >
+  <p
+    class="sc-AxiKw kRFcPg"
+  >
+    <span
+      class="sc-AxhCb iMLeny"
+    >
+      *
+    </span>
+     indicates a required field
+  </p>
   <form
     action="#"
-    class="sc-AxiKw iSgsng"
+    class="sc-AxhUy kRznDN"
   >
     <label
-      class="sc-AxhUy jBwtVz"
+      class="sc-AxheI cMlacN"
       for="name"
     >
-      Name:
-      <input
-        class="sc-AxhCb bMSIvc"
-        data-testid="signUpNameInput"
-        id="name"
-        name="name"
-        type="text"
-        value=""
-      />
+      Name: 
+      <span
+        class="sc-AxhCb iMLeny"
+      >
+        *
+      </span>
     </label>
+    <input
+      class="sc-AxgMl fHmrWc"
+      data-testid="signUpNameInput"
+      id="name"
+      name="name"
+      placeholder="Joe Bloggs"
+      type="text"
+      value=""
+    />
     <label
-      class="sc-AxhUy jBwtVz"
+      class="sc-AxheI cMlacN"
       for="role"
     >
       Role:
-      <input
-        class="sc-AxhCb bMSIvc"
-        data-testid="signUpRoleInput"
-        id="role"
-        name="role"
-        type="text"
-        value=""
-      />
     </label>
+    <input
+      class="sc-AxgMl fHmrWc"
+      data-testid="signUpRoleInput"
+      id="role"
+      name="role"
+      placeholder="Software Engineer"
+      type="text"
+      value=""
+    />
     <label
-      class="sc-AxhUy jBwtVz"
+      class="sc-AxheI cMlacN"
       for="email"
     >
-      Email:
-      <input
-        class="sc-AxhCb bMSIvc"
-        data-testid="signUpEmailInput"
-        id="email"
-        name="email"
-        type="email"
-        value=""
-      />
+      Email: 
+      <span
+        class="sc-AxhCb iMLeny"
+      >
+        *
+      </span>
     </label>
+    <input
+      class="sc-AxgMl fHmrWc"
+      data-testid="signUpEmailInput"
+      id="email"
+      name="email"
+      placeholder="hello@email.com"
+      type="email"
+      value=""
+    />
     <label
-      class="sc-AxhUy jBwtVz"
+      class="sc-AxheI cMlacN"
       for="password"
     >
-      Password:
-      <input
-        class="sc-AxhCb bMSIvc"
-        data-testid="signUpPasswordInput"
-        id="password"
-        name="password"
-        type="password"
-        value=""
-      />
+      Password: 
+      <span
+        class="sc-AxhCb iMLeny"
+      >
+        *
+      </span>
     </label>
+    <input
+      class="sc-AxgMl fHmrWc"
+      data-testid="signUpPasswordInput"
+      id="password"
+      name="password"
+      placeholder="Secret password..."
+      type="password"
+      value=""
+    />
     <button
       class="sc-AxjAm bRcXEK"
       data-testid="signUpSubmitButton"
