@@ -2,30 +2,30 @@
 
 exports[`PrivacyChecks component should render 1`] = `
 <form
-  class="sc-AxjAm kaYqpa"
+  class="sc-AxirZ jfPcbx"
 >
   <div
-    class="sc-AxirZ gujxst"
+    class="sc-AxiKw fKWGNZ"
   >
     <input
       data-testid="updatesCheckbox"
       type="checkbox"
     />
     <p
-      class="sc-AxiKw fROzrM"
+      class="sc-AxhCb bYDHFA"
     >
       Receive updates about Tray.io product by email
     </p>
   </div>
   <div
-    class="sc-AxirZ gujxst"
+    class="sc-AxiKw fKWGNZ"
   >
     <input
       data-testid="communicationCheckbox"
       type="checkbox"
     />
     <p
-      class="sc-AxiKw fROzrM"
+      class="sc-AxhCb bYDHFA"
     >
       Receive communication by email for other products created by the Tray.io team
     </p>
@@ -36,6 +36,7 @@ exports[`PrivacyChecks component should render 1`] = `
     Back
   </button>
   <button
+    class="sc-AxjAm bRcXEK"
     data-testid="privacySubmit"
     type="submit"
   >

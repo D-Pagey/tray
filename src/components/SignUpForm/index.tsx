@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { Formik, ErrorMessage } from 'formik';
 import { UserDataTypes } from '../../types';
+import { Button } from '../Button';
 import * as S from './styles';
 
 export type SignUpFormTypes = {
@@ -71,9 +72,9 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
                         </S.Label>
                         <ErrorMessage name="password" component="div" />
 
-                        <S.SubmitButton type="submit" disabled={isSubmitting} data-testid="signUpSubmitButton">
+                        <Button disabled={isSubmitting} data-testid="signUpSubmitButton">
                             Submit
-                        </S.SubmitButton>
+                        </Button>
                     </S.StyledForm>
                 )}
             </Formik>

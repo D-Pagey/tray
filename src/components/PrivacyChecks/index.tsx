@@ -1,4 +1,5 @@
 import React, { FC, useState } from 'react';
+import { Button } from '../Button';
 import * as S from './styles';
 
 export type PrivacyChecksTypes = {
@@ -41,9 +42,9 @@ export const PrivacyChecks: FC<PrivacyChecksTypes> = ({ onBack, onSubmit }) => {
                 Back
             </button>
 
-            <button type="submit" onClick={handleSubmit} data-testid="privacySubmit">
+            <Button onClick={handleSubmit} data-testid="privacySubmit">
                 Next
-            </button>
+            </Button>
         </S.Form>
     );
 };

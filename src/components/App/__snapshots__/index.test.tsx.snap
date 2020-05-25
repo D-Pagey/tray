@@ -12,41 +12,41 @@ exports[`App component should render 1`] = `
       Stepper
     </h3>
     <div
-      class="sc-fzoLsD jbYxLy"
+      class="sc-fzpans fQGGNO"
     >
       <button
-        class="sc-fzpans hugwmp"
+        class="sc-fzplWN kVFmmM"
         type="button"
       >
         User
       </button>
       <button
-        class="sc-fzpans gHZRgZ"
+        class="sc-fzplWN jEOsAQ"
         type="button"
       >
         Privacy
       </button>
       <button
-        class="sc-fzpans gHZRgZ"
+        class="sc-fzplWN jEOsAQ"
         type="button"
       >
         Done
       </button>
     </div>
     <div
-      class="sc-AxjAm kaYqpa"
+      class="sc-AxirZ jfPcbx"
     >
       <form
         action="#"
-        class="sc-AxirZ eTxVFc"
+        class="sc-AxiKw iSgsng"
       >
         <label
-          class="sc-AxhCb dlfVju"
+          class="sc-AxhUy jBwtVz"
           for="name"
         >
           Name:
           <input
-            class="sc-AxiKw bEmcek"
+            class="sc-AxhCb bMSIvc"
             data-testid="signUpNameInput"
             id="name"
             name="name"
@@ -55,12 +55,12 @@ exports[`App component should render 1`] = `
           />
         </label>
         <label
-          class="sc-AxhCb dlfVju"
+          class="sc-AxhUy jBwtVz"
           for="role"
         >
           Role:
           <input
-            class="sc-AxiKw bEmcek"
+            class="sc-AxhCb bMSIvc"
             data-testid="signUpRoleInput"
             id="role"
             name="role"
@@ -69,12 +69,12 @@ exports[`App component should render 1`] = `
           />
         </label>
         <label
-          class="sc-AxhCb dlfVju"
+          class="sc-AxhUy jBwtVz"
           for="email"
         >
           Email:
           <input
-            class="sc-AxiKw bEmcek"
+            class="sc-AxhCb bMSIvc"
             data-testid="signUpEmailInput"
             id="email"
             name="email"
@@ -83,12 +83,12 @@ exports[`App component should render 1`] = `
           />
         </label>
         <label
-          class="sc-AxhCb dlfVju"
+          class="sc-AxhUy jBwtVz"
           for="password"
         >
           Password:
           <input
-            class="sc-AxiKw bEmcek"
+            class="sc-AxhCb bMSIvc"
             data-testid="signUpPasswordInput"
             id="password"
             name="password"
@@ -97,7 +97,7 @@ exports[`App component should render 1`] = `
           />
         </label>
         <button
-          class="sc-AxhUy qvFKl"
+          class="sc-AxjAm bRcXEK"
           data-testid="signUpSubmitButton"
           type="submit"
         >
