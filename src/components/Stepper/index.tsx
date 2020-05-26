@@ -5,16 +5,8 @@ import { PrivacyChecks } from '../PrivacyChecks';
 import { SuccessMessage } from '../SuccessMessage';
 import * as S from './styles';
 
-/**
- * Store finalised form in parent state
- * Store finalised privary in parent state
- * Parent collates and console logs
- * Therefore can create form component
- */
-
 export const Stepper = () => {
     const [signUpData, setSignUpData] = useState<UserDataTypes>();
-    const [privacyData, setPrivacyData] = useState<UserDataTypes>();
     const [step, setStep] = useState(1);
 
     const handleSignUpSubmit = (userData: UserDataTypes) => {
@@ -23,7 +15,9 @@ export const Stepper = () => {
     };
 
     const handlePrivacySubmit = (privacyChecks: any) => {
-        setPrivacyData(privacyChecks);
+        const result = { ...signUpData, ...privacyChecks };
+        console.log({ result });
+
         setStep(3);
     };
 

@@ -9,4 +9,5 @@ describe('Stepper component', () => {
     });
 
     it.todo('should progress the step - have to fill in the form');
+    it.todo('should progress to final step - have to fill in both forms');
 });

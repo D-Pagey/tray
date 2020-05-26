@@ -17,7 +17,7 @@ describe('SignUpForm component', () => {
         const name = 'Dan';
         const role = 'Software Engineer';
         const email = 'dan@gmail.com';
-        const password = 'hello1234';
+        const password = 'Tray10SecurePassword';
         const onSubmit = jest.fn();
 
         const { getByTestId } = render(<SignUpForm {...props} onSubmit={onSubmit} />);
