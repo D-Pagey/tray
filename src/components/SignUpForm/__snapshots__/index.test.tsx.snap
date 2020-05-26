@@ -2,13 +2,13 @@
 
 exports[`SignUpForm component should render 1`] = `
 <div
-  class="sc-AxhCb iLrMEl"
+  class="sc-AxirZ jfPcbx"
 >
   <p
-    class="sc-AxhUy hQDqcJ"
+    class="sc-AxiKw kRFcPg"
   >
     <span
-      class="sc-AxgMl lYEcR"
+      class="sc-AxhCb ddwoFZ"
     >
       *
     </span>
@@ -16,21 +16,21 @@ exports[`SignUpForm component should render 1`] = `
   </p>
   <form
     action="#"
-    class="sc-AxheI fFzjlp"
+    class="sc-AxhUy kRznDN"
   >
     <label
-      class="sc-AxmLO dkqJhP"
+      class="sc-AxheI cMlacN"
       for="name"
     >
       Name: 
       <span
-        class="sc-AxgMl lYEcR"
+        class="sc-AxhCb ddwoFZ"
       >
         *
       </span>
     </label>
     <input
-      class="sc-Axmtr lkhMLB"
+      class="sc-AxgMl dYwfyb"
       data-testid="signUpNameInput"
       id="name"
       name="name"
@@ -39,13 +39,13 @@ exports[`SignUpForm component should render 1`] = `
       value=""
     />
     <label
-      class="sc-AxmLO dkqJhP"
+      class="sc-AxheI cMlacN"
       for="role"
     >
       Role:
     </label>
     <input
-      class="sc-Axmtr lkhMLB"
+      class="sc-AxgMl dYwfyb"
       data-testid="signUpRoleInput"
       id="role"
       name="role"
@@ -54,18 +54,18 @@ exports[`SignUpForm component should render 1`] = `
       value=""
     />
     <label
-      class="sc-AxmLO dkqJhP"
+      class="sc-AxheI cMlacN"
       for="email"
     >
       Email: 
       <span
-        class="sc-AxgMl lYEcR"
+        class="sc-AxhCb ddwoFZ"
       >
         *
       </span>
     </label>
     <input
-      class="sc-Axmtr lkhMLB"
+      class="sc-AxgMl dYwfyb"
       data-testid="signUpEmailInput"
       id="email"
       name="email"
@@ -74,18 +74,18 @@ exports[`SignUpForm component should render 1`] = `
       value=""
     />
     <label
-      class="sc-AxmLO dkqJhP"
+      class="sc-AxheI cMlacN"
       for="password"
     >
       Password: 
       <span
-        class="sc-AxgMl lYEcR"
+        class="sc-AxhCb ddwoFZ"
       >
         *
       </span>
     </label>
     <input
-      class="sc-Axmtr lkhMLB"
+      class="sc-AxgMl dYwfyb"
       data-testid="signUpPasswordInput"
       id="password"
       name="password"
@@ -94,7 +94,7 @@ exports[`SignUpForm component should render 1`] = `
       value=""
     />
     <button
-      class="sc-AxirZ esfovg"
+      class="sc-AxjAm jyhTFg"
       data-testid="signUpSubmitButton"
       type="submit"
     >

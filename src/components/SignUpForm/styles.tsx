@@ -12,7 +12,7 @@ export const Text = styled.p`
 `;
 
 export const RedSpan = styled.span`
-    color: red;
+    color: ${colour.red};
     display: contents;
 `;
 
@@ -22,7 +22,7 @@ export const StyledForm = styled(Form)`
 `;
 
 export const StyledField = styled(Field)`
-    border: 1px solid silver;
+    border: 1px solid ${colour.silver};
     border-radius: 5px;
     font-size: 1rem;
     margin: 0 0 1rem;
@@ -34,14 +34,6 @@ export const Label = styled.label`
     flex-direction: column;
     margin: 0;
     padding: 0 0 1rem;
-`;
-
-export const SubmitButton = styled.button`
-    align-self: flex-end;
-    background-color: green;
-    margin: 1rem 0 0;
-    padding: 1rem;
-    width: 200px;
 `;
 
 export const Error = styled(ErrorMessage)`

@@ -6,7 +6,7 @@ exports[`SuccessMessage component should render 1`] = `
   data-testid="successMessage"
 >
   <p
-    class="sc-AxirZ gQgsDg"
+    class="sc-AxirZ jiUrUH"
   >
     Please verify your email address, you should have received an email from us already!
   </p>

@@ -2,51 +2,51 @@
 
 exports[`App component should render 1`] = `
 <div
-  class="sc-fzoyAV ilrSjR"
+  class="sc-fzokOt fQJdmH"
 >
   <header>
     <h1
-      class="sc-fzoLag bprjPr"
+      class="sc-fzqBZW cCNJPQ"
     >
       Tray.io
     </h1>
   </header>
   <div>
     <h2
-      class="sc-fzokOt eemgQE"
+      class="sc-fznyAO jmoTiq"
     >
       Sign Up Form
     </h2>
     <div
-      class="sc-fzqBZW cZzLuM"
+      class="sc-fznKkj jrYdpG"
     >
       <button
-        class="sc-fzqNJr kKQZEm"
+        class="sc-fznZeY cEkNYK"
         type="button"
       >
         User
       </button>
       <button
-        class="sc-fzqNJr jCBTEO"
+        class="sc-fznZeY ersQNS"
         type="button"
       >
         Privacy
       </button>
       <button
-        class="sc-fzqNJr jCBTEO"
+        class="sc-fznZeY ersQNS"
         type="button"
       >
         Done
       </button>
     </div>
     <div
-      class="sc-AxhCb iLrMEl"
+      class="sc-AxirZ jfPcbx"
     >
       <p
-        class="sc-AxhUy hQDqcJ"
+        class="sc-AxiKw kRFcPg"
       >
         <span
-          class="sc-AxgMl lYEcR"
+          class="sc-AxhCb ddwoFZ"
         >
           *
         </span>
@@ -54,21 +54,21 @@ exports[`App component should render 1`] = `
       </p>
       <form
         action="#"
-        class="sc-AxheI fFzjlp"
+        class="sc-AxhUy kRznDN"
       >
         <label
-          class="sc-AxmLO dkqJhP"
+          class="sc-AxheI cMlacN"
           for="name"
         >
           Name: 
           <span
-            class="sc-AxgMl lYEcR"
+            class="sc-AxhCb ddwoFZ"
           >
             *
           </span>
         </label>
         <input
-          class="sc-Axmtr lkhMLB"
+          class="sc-AxgMl dYwfyb"
           data-testid="signUpNameInput"
           id="name"
           name="name"
@@ -77,13 +77,13 @@ exports[`App component should render 1`] = `
           value=""
         />
         <label
-          class="sc-AxmLO dkqJhP"
+          class="sc-AxheI cMlacN"
           for="role"
         >
           Role:
         </label>
         <input
-          class="sc-Axmtr lkhMLB"
+          class="sc-AxgMl dYwfyb"
           data-testid="signUpRoleInput"
           id="role"
           name="role"
@@ -92,18 +92,18 @@ exports[`App component should render 1`] = `
           value=""
         />
         <label
-          class="sc-AxmLO dkqJhP"
+          class="sc-AxheI cMlacN"
           for="email"
         >
           Email: 
           <span
-            class="sc-AxgMl lYEcR"
+            class="sc-AxhCb ddwoFZ"
           >
             *
           </span>
         </label>
         <input
-          class="sc-Axmtr lkhMLB"
+          class="sc-AxgMl dYwfyb"
           data-testid="signUpEmailInput"
           id="email"
           name="email"
@@ -112,18 +112,18 @@ exports[`App component should render 1`] = `
           value=""
         />
         <label
-          class="sc-AxmLO dkqJhP"
+          class="sc-AxheI cMlacN"
           for="password"
         >
           Password: 
           <span
-            class="sc-AxgMl lYEcR"
+            class="sc-AxhCb ddwoFZ"
           >
             *
           </span>
         </label>
         <input
-          class="sc-Axmtr lkhMLB"
+          class="sc-AxgMl dYwfyb"
           data-testid="signUpPasswordInput"
           id="password"
           name="password"
@@ -132,7 +132,7 @@ exports[`App component should render 1`] = `
           value=""
         />
         <button
-          class="sc-AxirZ esfovg"
+          class="sc-AxjAm jyhTFg"
           data-testid="signUpSubmitButton"
           type="submit"
         >

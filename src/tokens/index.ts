@@ -6,9 +6,11 @@ export const mediaQuery = {
 };
 
 export const colour = {
+    black: 'black',
     darkgreen: 'darkgreen',
     green: 'green',
     offWhite: '#f8f8ff',
+    purple: '#a8a8ff',
     red: 'red',
     silver: 'silver',
     white: 'white'
