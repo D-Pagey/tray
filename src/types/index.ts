@@ -4,3 +4,8 @@ export type UserDataTypes = {
     password: string;
     role: string;
 };
+
+export type PrivacyDataTypes = {
+    receiveUpdates: boolean;
+    receiveCommunication: boolean;
+};

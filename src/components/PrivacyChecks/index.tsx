@@ -1,19 +1,19 @@
 import React, { FC, useState } from 'react';
+import { PrivacyDataTypes } from '../../types';
 import { Button } from '../Button';
 import * as S from './styles';
 
 export type PrivacyChecksTypes = {
     onBack: () => void;
-    onSubmit: (privacyChecks: any) => void;
+    onSubmit: (privacyChecks: PrivacyDataTypes) => void;
 };
 
 export const PrivacyChecks: FC<PrivacyChecksTypes> = ({ onBack, onSubmit }) => {
-    // TODO: rename these
-    const [isUpdatesChecked, setIsUpdatesChecked] = useState(false);
-    const [isCommunicationChecked, setIsCommunicationChecked] = useState(false);
+    const [receiveUpdates, setReceiveUpdates] = useState(false);
+    const [receiveCommunication, setReceiveCommunication] = useState(false);
 
     const handleSubmit = () => {
-        onSubmit({ isUpdatesChecked, isCommunicationChecked });
+        onSubmit({ receiveUpdates, receiveCommunication });
     };
 
     return (
@@ -21,8 +21,8 @@ export const PrivacyChecks: FC<PrivacyChecksTypes> = ({ onBack, onSubmit }) => {
             <S.InputWrapper>
                 <input
                     type="checkbox"
-                    checked={isUpdatesChecked}
-                    onChange={() => setIsUpdatesChecked(!isUpdatesChecked)}
+                    checked={receiveUpdates}
+                    onChange={() => setReceiveUpdates(!receiveUpdates)}
                     data-testid="updatesCheckbox"
                 />
                 <S.Text>Receive updates about Tray.io product by email</S.Text>
@@ -31,8 +31,8 @@ export const PrivacyChecks: FC<PrivacyChecksTypes> = ({ onBack, onSubmit }) => {
             <S.InputWrapper>
                 <input
                     type="checkbox"
-                    checked={isCommunicationChecked}
-                    onChange={() => setIsCommunicationChecked(!isCommunicationChecked)}
+                    checked={receiveCommunication}
+                    onChange={() => setReceiveCommunication(!receiveCommunication)}
                     data-testid="communicationCheckbox"
                 />
                 <S.Text>Receive communication by email for other products created by the Tray.io team</S.Text>

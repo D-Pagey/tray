@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { UserDataTypes } from '../../types';
+import { PrivacyDataTypes, UserDataTypes } from '../../types';
 import { SignUpForm } from '../SignUpForm';
 import { PrivacyChecks } from '../PrivacyChecks';
 import { SuccessMessage } from '../SuccessMessage';
@@ -14,8 +14,8 @@ export const Stepper = () => {
         setStep(2);
     };
 
-    const handlePrivacySubmit = (privacyChecks: any) => {
-        const result = { ...signUpData, ...privacyChecks };
+    const handlePrivacySubmit = (privacyData: PrivacyDataTypes) => {
+        const result = { ...signUpData, ...privacyData };
         console.log({ result });
 
         setStep(3);

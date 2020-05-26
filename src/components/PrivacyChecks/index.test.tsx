@@ -23,35 +23,31 @@ describe('PrivacyChecks component', () => {
         userEvent.click(getByTestId('privacySubmit'));
 
         await waitFor(() =>
-            expect(onSubmit).toHaveBeenCalledWith({ isCommunicationChecked: true, isUpdatesChecked: true })
+            expect(onSubmit).toHaveBeenCalledWith({ receiveUpdates: true, receiveCommunication: true })
         );
     });
 
-    // TODO: change names
     it.each`
-        clickFirstCheckbox
+        receiveUpdates
         ${true}
         ${false}
-    `(
-        'should call onSubmit with correct values when the first checkbox is checked = $clickFirstCheckbox',
-        async ({ clickFirstCheckbox }) => {
-            const onSubmit = jest.fn();
-            const { getByTestId } = render(<PrivacyChecks {...props} onSubmit={onSubmit} />);
+    `('should call onSubmit with correct values when receiveUpdates = $receiveUpdates', async ({ receiveUpdates }) => {
+        const onSubmit = jest.fn();
+        const { getByTestId } = render(<PrivacyChecks {...props} onSubmit={onSubmit} />);
 
-            if (clickFirstCheckbox) {
-                userEvent.click(getByTestId('updatesCheckbox'));
-            } else {
-                userEvent.click(getByTestId('communicationCheckbox'));
-            }
-
-            userEvent.click(getByTestId('privacySubmit'));
-
-            await waitFor(() =>
-                expect(onSubmit).toHaveBeenCalledWith({
-                    isCommunicationChecked: !clickFirstCheckbox,
-                    isUpdatesChecked: clickFirstCheckbox
-                })
-            );
+        if (receiveUpdates) {
+            userEvent.click(getByTestId('updatesCheckbox'));
+        } else {
+            userEvent.click(getByTestId('communicationCheckbox'));
         }
-    );
+
+        userEvent.click(getByTestId('privacySubmit'));
+
+        await waitFor(() =>
+            expect(onSubmit).toHaveBeenCalledWith({
+                receiveUpdates,
+                receiveCommunication: !receiveUpdates
+            })
+        );
+    });
 });
