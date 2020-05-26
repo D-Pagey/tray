@@ -1,52 +1,26 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b3d17311-c014-4cb0-b578-0627aee4cf42/deploy-status)](https://app.netlify.com/sites/pagey-tray/deploys)
 
--   mention that Redux is overkill for this app
--   choice to use Formik
--   removed back functionality as per brief (link commit)
--   styled duplications
--   more time could abstract the input into own components
+# Revolut Currency Exchange Widget
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my submission for the Tray Technical Exercise, you can see a live demo hosted
+on [Netlify](https://pagey-tray.netlify.app/).
 
-## Available Scripts
+### Useful Scripts
 
-In the project directory, you can run:
+-   `yarn` - install dependencies
+-   `yarn start` - run the app locally and go to [http://localhost:3000](http://localhost:3000) in a browser.
+-   `yarn test` - runs the test suite
+-   `yarn build` - builds the app for production to the `/build` folder
 
-### `yarn start`
+### Developer Notes
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I decided to use a form library called `Formik` since it is one of the most popular form libraries.
+This also allowed me to drastically reduce state management and therefore have no need for `Redux`,
+which can often be overkill for small apps.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+With more time, I would have abstracted the `StyledFields` in the `SignUpForm` into their own, reusable,
+`Input` components.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I implemented a back functionality for my own developer experience building this app. However, I removed
+this functionality ([commit](https://github.com/D-Pagey/tray/commit/ca37ca99fbc1a6a7551f3cdbf816f3be84528af5))
+as the brief mentioned this would be a future talking point.
