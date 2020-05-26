@@ -16,7 +16,7 @@ export const PrivacyChecks: FC<PrivacyChecksTypes> = ({ onSubmit }) => {
     };
 
     return (
-        <S.Form>
+        <S.Form data-testid="privacyChecks">
             <S.InputWrapper>
                 <input
                     type="checkbox"

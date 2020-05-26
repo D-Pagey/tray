@@ -1,5 +1,6 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { Stepper } from '.';
 
 describe('Stepper component', () => {
@@ -8,6 +9,29 @@ describe('Stepper component', () => {
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    it.todo('should progress the step - have to fill in the form');
-    it.todo('should progress to final step - have to fill in both forms');
+    it('should render PrivacyChecks page once signed up', async () => {
+        const { getByTestId } = render(<Stepper />);
+
+        userEvent.type(getByTestId('signUpNameInput'), 'Dan');
+        userEvent.type(getByTestId('signUpEmailInput'), 'dan@mail.com');
+        userEvent.type(getByTestId('signUpPasswordInput'), 'Tray10SecurePassword');
+
+        userEvent.click(getByTestId('signUpSubmitButton'));
+
+        await waitFor(() => getByTestId('privacyChecks'));
+    });
+
+    it('should render SuccessMessage once sign up and clicked through privacy', async () => {
+        const { getByTestId } = render(<Stepper />);
+
+        userEvent.type(getByTestId('signUpNameInput'), 'Dan');
+        userEvent.type(getByTestId('signUpEmailInput'), 'dan@mail.com');
+        userEvent.type(getByTestId('signUpPasswordInput'), 'Tray10SecurePassword');
+
+        userEvent.click(getByTestId('signUpSubmitButton'));
+
+        await waitFor(() => userEvent.click(getByTestId('privacySubmit')));
+
+        await waitFor(() => getByTestId('successMessage'));
+    });
 });

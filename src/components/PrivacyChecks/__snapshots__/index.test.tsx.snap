@@ -3,6 +3,7 @@
 exports[`PrivacyChecks component should render 1`] = `
 <form
   class="sc-AxirZ crkYqV"
+  data-testid="privacyChecks"
 >
   <div
     class="sc-AxiKw fKWGNZ"
