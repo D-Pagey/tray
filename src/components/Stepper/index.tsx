@@ -21,8 +21,6 @@ export const Stepper = () => {
         setStep(3);
     };
 
-    const handleBack = () => setStep(1);
-
     return (
         <div>
             <S.Title>Sign Up Form</S.Title>
@@ -34,7 +32,7 @@ export const Stepper = () => {
             </S.ButtonWrapper>
 
             {step === 1 && <SignUpForm onSubmit={handleSignUpSubmit} />}
-            {step === 2 && <PrivacyChecks onBack={handleBack} onSubmit={handlePrivacySubmit} />}
+            {step === 2 && <PrivacyChecks onSubmit={handlePrivacySubmit} />}
             {step === 3 && <SuccessMessage />}
         </div>
     );

@@ -4,11 +4,10 @@ import { Button } from '../Button';
 import * as S from './styles';
 
 export type PrivacyChecksTypes = {
-    onBack: () => void;
     onSubmit: (privacyChecks: PrivacyDataTypes) => void;
 };
 
-export const PrivacyChecks: FC<PrivacyChecksTypes> = ({ onBack, onSubmit }) => {
+export const PrivacyChecks: FC<PrivacyChecksTypes> = ({ onSubmit }) => {
     const [receiveUpdates, setReceiveUpdates] = useState(false);
     const [receiveCommunication, setReceiveCommunication] = useState(false);
 
@@ -37,10 +36,6 @@ export const PrivacyChecks: FC<PrivacyChecksTypes> = ({ onBack, onSubmit }) => {
                 />
                 <S.Text>Receive communication by email for other products created by the Tray.io team</S.Text>
             </S.InputWrapper>
-
-            <button type="button" onClick={onBack}>
-                Back
-            </button>
 
             <Button onClick={handleSubmit} data-testid="privacySubmit">
                 Next

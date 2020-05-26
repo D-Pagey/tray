@@ -31,11 +31,6 @@ exports[`PrivacyChecks component should render 1`] = `
     </p>
   </div>
   <button
-    type="button"
-  >
-    Back
-  </button>
-  <button
     class="sc-AxjAm jyhTFg"
     data-testid="privacySubmit"
     type="submit"

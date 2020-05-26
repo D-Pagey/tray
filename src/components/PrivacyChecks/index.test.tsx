@@ -4,7 +4,6 @@ import userEvent from '@testing-library/user-event';
 import { PrivacyChecks, PrivacyChecksTypes } from '.';
 
 const props: PrivacyChecksTypes = {
-    onBack: () => null,
     onSubmit: () => null
 };
 
