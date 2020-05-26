@@ -27,26 +27,29 @@ describe('PrivacyChecks component', () => {
     });
 
     it.each`
-        receiveUpdates
-        ${true}
-        ${false}
-    `('should call onSubmit with correct values when receiveUpdates = $receiveUpdates', async ({ receiveUpdates }) => {
-        const onSubmit = jest.fn();
-        const { getByTestId } = render(<PrivacyChecks {...props} onSubmit={onSubmit} />);
+        receiveUpdates | receiveCommunication
+        ${true}        | ${false}
+        ${false}       | ${true}
+    `(
+        'should call onSubmit with correct values when receiveUpdates = $receiveUpdates',
+        async ({ receiveUpdates, receiveCommunication }) => {
+            const onSubmit = jest.fn();
+            const { getByTestId } = render(<PrivacyChecks {...props} onSubmit={onSubmit} />);
 
-        if (receiveUpdates) {
-            userEvent.click(getByTestId('updatesCheckbox'));
-        } else {
-            userEvent.click(getByTestId('communicationCheckbox'));
+            if (receiveUpdates) {
+                userEvent.click(getByTestId('updatesCheckbox'));
+            } else {
+                userEvent.click(getByTestId('communicationCheckbox'));
+            }
+
+            userEvent.click(getByTestId('privacySubmit'));
+
+            await waitFor(() =>
+                expect(onSubmit).toHaveBeenCalledWith({
+                    receiveUpdates,
+                    receiveCommunication
+                })
+            );
         }
-
-        userEvent.click(getByTestId('privacySubmit'));
-
-        await waitFor(() =>
-            expect(onSubmit).toHaveBeenCalledWith({
-                receiveUpdates,
-                receiveCommunication: !receiveUpdates
-            })
-        );
-    });
+    );
 });

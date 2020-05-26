@@ -4,13 +4,11 @@ exports[`App component should render 1`] = `
 <div
   class="sc-fzokOt fQJdmH"
 >
-  <header>
-    <h1
-      class="sc-fzqBZW cCNJPQ"
-    >
-      Tray.io
-    </h1>
-  </header>
+  <h1
+    class="sc-fzqBZW cCNJPQ"
+  >
+    Tray.io
+  </h1>
   <div>
     <h2
       class="sc-fznyAO jmoTiq"

@@ -7,9 +7,7 @@ export const App = () => {
         <S.Wrapper>
             <S.GlobalStyle />
 
-            <header>
-                <S.Title>Tray.io</S.Title>
-            </header>
+            <S.Title>Tray.io</S.Title>
 
             <Stepper />
         </S.Wrapper>

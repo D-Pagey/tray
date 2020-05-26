@@ -35,5 +35,38 @@ describe('SignUpForm component', () => {
         await waitFor(() => expect(onSubmit).toHaveBeenCalledWith({ name, role, email, password }));
     });
 
-    it.todo('should show errors for each required field (use it.each)');
+    it('should block progress if no name', async () => {
+        const onSubmit = jest.fn();
+        const { getByTestId } = render(<SignUpForm {...props} onSubmit={onSubmit} />);
+
+        userEvent.click(getByTestId('signUpSubmitButton'));
+
+        await waitFor(() => getByTestId('signUpNameError'));
+        await waitFor(() => expect(onSubmit).not.toHaveBeenCalled());
+    });
+
+    it('should block progress if no email', async () => {
+        const onSubmit = jest.fn();
+        const { getByTestId } = render(<SignUpForm {...props} onSubmit={onSubmit} />);
+
+        userEvent.type(getByTestId('signUpNameInput'), 'Dan');
+
+        userEvent.click(getByTestId('signUpSubmitButton'));
+
+        await waitFor(() => getByTestId('signUpEmailError'));
+        await waitFor(() => expect(onSubmit).not.toHaveBeenCalled());
+    });
+
+    it('should block progress if no password', async () => {
+        const onSubmit = jest.fn();
+        const { getByTestId } = render(<SignUpForm {...props} onSubmit={onSubmit} />);
+
+        userEvent.type(getByTestId('signUpNameInput'), 'Dan');
+        userEvent.type(getByTestId('signUpEmailInput'), 'dan@mail.com');
+
+        userEvent.click(getByTestId('signUpSubmitButton'));
+
+        await waitFor(() => getByTestId('signUpPasswordError'));
+        await waitFor(() => expect(onSubmit).not.toHaveBeenCalled());
+    });
 });

@@ -50,7 +50,7 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
                             data-testid="signUpNameInput"
                             placeholder="Joe Bloggs"
                         />
-                        <S.Error name="name" component="div" />
+                        <S.Error name="name" component="div" data-testid="signUpNameError" />
 
                         <S.Label htmlFor="role">Role:</S.Label>
                         <S.StyledField
@@ -60,7 +60,6 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
                             data-testid="signUpRoleInput"
                             placeholder="Software Engineer"
                         />
-                        <S.Error name="role" component="div" />
 
                         <S.Label htmlFor="email">
                             Email: <S.RedSpan>*</S.RedSpan>
@@ -72,7 +71,7 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
                             data-testid="signUpEmailInput"
                             placeholder="hello@email.com"
                         />
-                        <S.Error name="email" component="div" />
+                        <S.Error name="email" component="div" data-testid="signUpEmailError" />
 
                         <S.Label htmlFor="password">
                             Password: <S.RedSpan>*</S.RedSpan>
@@ -84,7 +83,7 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
                             data-testid="signUpPasswordInput"
                             placeholder="Secret password..."
                         />
-                        <S.Error name="password" component="div" />
+                        <S.Error name="password" component="div" data-testid="signUpPasswordError" />
 
                         <Button disabled={isSubmitting} data-testid="signUpSubmitButton">
                             Submit
