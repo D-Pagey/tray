@@ -1,17 +1,24 @@
 import React, { FC } from 'react';
 import { Formik } from 'formik';
+import { string, object } from 'yup';
 import { UserDataTypes } from '../../types';
 import { Button } from '../Button';
 import * as S from './styles';
 
+const SignupSchema = object().shape({
+    name: string().required('Required'),
+    email: string().email('Invalid email').required('Required'),
+    password: string()
+        .min(9, 'Password too short!')
+        .required('Required')
+        .matches(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/,
+            'Must contain a number, an uppercase letter and a lowercase letter'
+        )
+});
+
 export type SignUpFormTypes = {
     onSubmit: (userData: UserDataTypes) => void;
-};
-
-type ErrorTypes = {
-    email?: string;
-    name?: string;
-    password?: string;
 };
 
 const initialValues = { email: '', name: '', password: '', role: '' };
@@ -25,17 +32,7 @@ export const SignUpForm: FC<SignUpFormTypes> = ({ onSubmit }) => {
 
             <Formik
                 initialValues={initialValues}
-                validate={(values) => {
-                    const errors: ErrorTypes = {};
-
-                    if (!values.email) {
-                        errors.email = 'Required';
-                    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-                        errors.email = 'Invalid email address';
-                    }
-
-                    return errors;
-                }}
+                validationSchema={SignupSchema}
                 onSubmit={(values, { setSubmitting }) => {
                     onSubmit(values);
                     setSubmitting(false);

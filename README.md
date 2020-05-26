@@ -4,6 +4,7 @@
 -   choice to use Formik
 -   removed back functionality as per brief (link commit)
 -   styled duplications
+-   more time could abstract the input into own components
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
