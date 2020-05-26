@@ -2,11 +2,11 @@
 
 exports[`SuccessMessage component should render 1`] = `
 <div
-  class="sc-AxjAm knSwqB"
+  class="sc-AxjAm kWsBu"
   data-testid="successMessage"
 >
   <p
-    class="sc-AxirZ jiUrUH"
+    class="sc-AxirZ eiVOoa"
   >
     Please verify your email address, you should have received an email from us already!
   </p>
