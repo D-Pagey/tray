@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b3d17311-c014-4cb0-b578-0627aee4cf42/deploy-status)](https://app.netlify.com/sites/pagey-tray/deploys)
 
-# Revolut Currency Exchange Widget
+# Tray Tech Test
 
 This is my submission for the Tray Technical Exercise, you can see a live demo hosted
 on [Netlify](https://pagey-tray.netlify.app/).
